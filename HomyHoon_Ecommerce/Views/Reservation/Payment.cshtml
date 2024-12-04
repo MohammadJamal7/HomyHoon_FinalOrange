@@ -1,0 +1,256 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Form</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <style>
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            padding: 20px 0;
+        }
+        .payment-card {
+            border: none;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.95);
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        .payment-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+        }
+        .card-header {
+            background: linear-gradient(45deg, #6366f1, #8b5cf6);
+            color: white;
+            border-radius: 20px 20px 0 0 !important;
+            padding: 1.5rem !important;
+            position: relative;
+            overflow: hidden;
+        }
+        .card-header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 300px;
+            height: 300px;
+            background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0) 100%);
+            transform: translate(50%, -50%);
+            border-radius: 50%;
+        }
+        .form-control {
+            border-radius: 12px;
+            padding: 15px;
+            border: 2px solid #e2e8f0;
+            background: #f8fafc;
+            transition: all 0.3s ease;
+        }
+        .form-control:focus {
+            box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+            border-color: #6366f1;
+            background: white;
+        }
+        .input-group-text {
+            border-radius: 0 12px 12px 0;
+            background: #f8fafc;
+            border: 2px solid #e2e8f0;
+            border-left: none;
+        }
+        .btn-primary {
+            background: linear-gradient(45deg, #6366f1, #8b5cf6);
+            border: none;
+            padding: 15px;
+            border-radius: 12px;
+            width: 100%;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            background: linear-gradient(45deg, #4f46e5, #7c3aed);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(99, 102, 241, 0.2);
+        }
+        .card-info {
+            background: linear-gradient(to right, #f8fafc, #f1f5f9);
+            border-radius: 12px;
+            padding: 20px;
+            margin-bottom: 25px;
+            border: 2px solid #e2e8f0;
+        }
+        .card-icons {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .card-icon {
+            width: 50px;
+            height: 30px;
+            background: white;
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+        .floating-label {
+            position: absolute;
+            top: 0;
+            left: 12px;
+            transform: translateY(-50%);
+            background: white;
+            padding: 0 5px;
+            color: #64748b;
+            font-size: 0.85rem;
+        }
+        .form-group {
+            position: relative;
+            margin-bottom: 20px;
+        }
+        .security-badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 8px 15px;
+            background: #f1f5f9;
+            border-radius: 20px;
+            color: #64748b;
+            font-size: 0.9rem;
+        }
+        .amount-text {
+            font-size: 2rem;
+            font-weight: 700;
+            background: linear-gradient(45deg, #6366f1, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-8">
+                <div class="payment-card">
+                    <div class="card-header">
+                        <h4 class="mb-0 d-flex align-items-center">
+                            <i class="fas fa-shield-alt me-2"></i>
+                            Secure Payment
+                        </h4>
+                    </div>
+                    <div class="card-body p-4">
+                        <div class="card-info">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="text-muted">Amount to Pay:</span>
+                                <span class="amount-text">@ViewData["TotalPrice"] JOD</span>
+                            </div>
+                        </div>
+
+                        <form id="paymentForm">
+                            <div class="form-group">
+                                <span class="floating-label">Card Holder Name</span>
+                                <input type="text" class="form-control" placeholder="e.g. John Doe" id="cardHolderName">
+                            </div>
+
+                            <div class="form-group pt-2">
+                                <span class="floating-label">Card Number</span>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="1234 5678 9012 3456" id="cardNumber">
+                                    <span class="input-group-text">
+                                        <i class="fab fa-cc-visa"></i>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <span class="floating-label">Expiry Date</span>
+                                        <input type="text" class="form-control" placeholder="MM/YY" id="expiryDate">
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <span class="floating-label">CVV</span>
+                                        <input type="text" class="form-control" placeholder="123" id="cvv">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary mt-4">
+                                Complete Payment
+                                <i class="fas fa-lock ms-2"></i>
+                            </button>
+                        </form>
+
+                        <div class="text-center mt-4">
+                            <div class="security-badge">
+                                <i class="fas fa-shield-alt me-2"></i>
+                                256-bit SSL Secure Payment
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('paymentForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent form submission
+
+            // Get form input values
+            const cardHolderName = document.getElementById('cardHolderName').value.trim();
+            const cardNumber = document.getElementById('cardNumber').value.trim();
+            const expiryDate = document.getElementById('expiryDate').value.trim();
+            const cvv = document.getElementById('cvv').value.trim();
+
+            // Validation logic
+            if (!cardHolderName) {
+                Swal.fire('Error', 'Please enter the card holder name.', 'error');
+                return;
+            }
+            if (!/^\d{16}$/.test(cardNumber.replace(/\s+/g, ''))) { // Allow spaces in card number
+                Swal.fire('Error', 'Please enter a valid 16-digit card number.', 'error');
+                return;
+            }
+            if (!/^\d{2}\/\d{2}$/.test(expiryDate)) {
+                Swal.fire('Error', 'Please enter a valid expiry date (MM/YY).', 'error');
+                return;
+            }
+            const [month, year] = expiryDate.split('/').map(Number);
+            if (new Date(`20${year}`, month - 1) < new Date()) {
+                Swal.fire('Error', 'The card expiry date is invalid or has expired.', 'error');
+                return;
+            }
+            if (!/^\d{3}$/.test(cvv)) {
+                Swal.fire('Error', 'Please enter a valid 3-digit CVV.', 'error');
+                return;
+            }
+
+            Swal.fire({
+                title: 'Payment Successful!',
+                text: 'Your payment has been processed successfully.',
+                icon: 'success',
+                confirmButtonText: 'OK'
+            }).then(() => {
+                
+                window.location.href = '/Reservation/FinishPayment';
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,459 @@
+﻿@{
+    Layout = null;
+}
+@model HomyHoon_Ecommerce.ViewModels.OwnerVM
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Onwer's Page</title>
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        @@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
+                :root {
+                    --header-height: 3rem;
+                    --nav-width: 68px;
+                    --first-color: #6f42c1; /* Updated background color */
+                    --first-color-light: #AFA5D9;
+                    --white-color: #F7F6FB;
+                    --body-font: 'Nunito', sans-serif;
+                    --normal-font-size: 1rem;
+                    --z-fixed: 100;
+                }
+                *, ::before, ::after {
+                    box-sizing: border-box;
+                }
+                .outlined-purple{
+            border:1px solid #6f42c1;
+            color: #5a379d;
+        }
+        .outlined-purple:hover{
+            background-color: #6f42c1; /* Custom purple color */
+            color: white;
+        }
+                body {
+                    margin-top:100px;
+                    position: relative;
+                    margin: var(--header-height) 0 0 0;
+                    padding: 0 1rem;
+                    font-family: var(--body-font);
+                    font-size: var(--normal-font-size);
+                    transition: .5s;
+                }
+                a {
+                    text-decoration: none;
+                }
+                .header {
+                    width: 100%;
+                    height: var(--header-height);
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 0 1rem;
+                    background-color: var(--white-color);
+                    z-index: var(--z-fixed);
+                    transition: .5s;
+                }
+                .header_toggle {
+                    color: var(--first-color);
+                    font-size: 1.5rem;
+                    cursor: pointer;
+                }
+                .header_img {
+                    width: 35px;
+                    height: 35px;
+                    display: flex;
+                    justify-content: center;
+                    border-radius: 50%;
+                    overflow: hidden;
+                }
+                .header_img img {
+                    width: 40px;
+                }
+                .l-navbar {
+                    position: fixed;
+                    top: 0;
+                    left: -30%;
+                    width: var(--nav-width);
+                    height: 100vh;
+                    background-color: var(--first-color); /* Updated background color */
+                    padding: .5rem 1rem 0 0;
+                    transition: .5s;
+                    z-index: var(--z-fixed);
+                }
+                .nav {
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    overflow: hidden;
+                }
+                .nav_logo, .nav_link {
+                    display: grid;
+                    grid-template-columns: max-content max-content;
+                    align-items: center;
+                    column-gap: 1rem;
+                    padding: .5rem 0 .5rem 1.5rem;
+                }
+                .nav_logo {
+                    margin-bottom: 2rem;
+                }
+                .nav_logo-icon {
+                    font-size: 1.25rem;
+                    color: var(--white-color);
+                }
+                .nav_logo-name {
+                    color: var(--white-color);
+                    font-weight: 700;
+                }
+                .nav_link {
+                    position: relative;
+                    color: var(--first-color-light);
+                    margin-bottom: 1.5rem;
+                    transition: .3s;
+                }
+                .nav_link:hover {
+                    color: var(--white-color);
+                }
+                .nav_icon {
+                    font-size: 1.25rem;
+                }
+                .show {
+                    left: 0;
+                }
+                .body-pd {
+                    padding-left: calc(var(--nav-width) + 1rem);
+                }
+                .active {
+                    color: var(--white-color);
+                }
+                .active::before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    width: 2px;
+                    height: 32px;
+                    background-color: var(--white-color);
+                }
+                .height-100 {
+                    height: 100vh;
+                }
+        @@media screen and (min-width: 768px) {
+                    body {
+                        margin: calc(var(--header-height) + 1rem) 0 0 0;
+                        padding-left: calc(var(--nav-width) + 2rem);
+                    }
+                    .header {
+                        height: calc(var(--header-height) + 1rem);
+                        padding: 0 2rem 0 calc(var(--nav-width) + 2rem);
+                    }
+                    .header_img {
+                        width: 40px;
+                        height: 40px;
+                    }
+                    .header_img img {
+                        width: 45px;
+                    }
+                    .l-navbar {
+                        left: 0;
+                        padding: 1rem 1rem 0 0;
+                    }
+                    .show {
+                        width: calc(var(--nav-width) + 156px);
+                    }
+                    .body-pd {
+                        padding-left: calc(var(--nav-width) + 188px);
+                    }
+                    .purple {
+                    background-color: #6f42c1;
+                    color: white;
+                }
+
+                .purple:hover {
+                    background-color: #5a379d;
+                }
+                .purple-without-hover{
+            background-color: #6f42c1; /* Custom purple color */
+            color: white;
+        }
+                }
+    </style>
+</head>
+<body id="body-pd">
+    <header class="header" id="header">
+        <div class="header_toggle">
+            <i class='bx bx-menu'
+               id="header-toggle"></i>
+        </div>
+
+        <a class="nav-link py-1 px-1" href="@Url.Action("Index","Pages")" style="color:#6f42c1;border-bottom: 1px solid black">Home</a>
+
+
+        <a class="nav-link py-1 px-1" href="@Url.Action("Index","Apartments")" style="color:#6f42c1;border-bottom: 1px solid black">Discover</a>
+
+        <div class="header_img"> <img src="@Model.User.ProfilePicture" alt=""> </div>
+     
+    </header>
+    <div class="l-navbar" id="nav-bar">
+        <nav class="nav">
+            <div>
+                <a href="#" class="nav_logo">
+                    <img <img src="@Url.Content("~/images/logo-icon-white.png")"
+                         width="30px">
+                    <span class="nav_logo-name">User's Page</span>
+                </a>
+                
+                <div class="nav_list">
+                    <a href="#" class="nav_link active">
+                        <i class='bx bx-grid-alt nav_icon'></i>
+                        <span class="nav_name">Overview</span>
+                    </a>
+                    <a href="@Url.Action("AddApartment","Owner")" class="nav_link">
+                        <i class='bx bxs-folder-plus'></i>
+                        <span class="nav_name">Add Apartment</span>
+                    </a>
+                    <a href="@Url.Action("SignOut","Account")" class="nav_link">
+                        <i class='bx bx-log-out nav_icon'></i>
+                        <span class="nav_name">SignOut</span>
+                    </a>
+                </div>
+            </div>
+
+        </nav>
+
+    </div>
+    <!--Container Main start-->
+    <div class=" bg-light p-2 ">
+
+        <div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card shadow-sm border-0">
+                        <div class="row g-0">
+                            <!-- Profile Picture -->
+                            <div class="col-md-4 d-flex align-items-center justify-content-center bg-light">
+                                <img src="@Model.User.ProfilePicture" alt="User Profile Picture" class="img-fluid rounded-circle shadow-sm " style="width: 150px; height: 150px; object-fit: cover; border:3px solid #6f42c1;">
+                            </div>
+
+                            <!-- User Details -->
+                            <div class="col-md-8">
+                                <div class="card-body">
+                                    <h3 class="card-title text-dark">@Model.User.FirstName @Model.User.LastName</h3>
+                                    <p class="card-text mb-1"><strong>Email:</strong> @Model.User.Email</p>
+                                    <p class="card-text mb-1"><strong>Phone:</strong> @Model.User.PhoneNumber</p>
+                                    <p class="card-text mb-1"><strong>City:</strong> @Model.User.City</p>
+                                    <p class="card-text mb-1"><strong>Address</strong> @Model.User.Adress</p>
+
+                                    
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       @if(Model.TotalApart==0)
+        {
+            <div class="bg-white p-5 text-center rounded shadow-sm" style="margin-top:40px; max-width: 1000px; margin-left: auto; margin-right: auto; margin-bottom:50px">
+                <img src="@Url.Content("~/images/empty.jpg")" alt="No Apartments" class="mb-4" style="max-width: 180px; border-radius: 10px;">
+                <h2 class="fw-bold mb-3">No Apartments Listed Yet!</h2>
+                <p class="text-muted mb-4">
+                    Start your journey as a host by adding your first apartment. It’s quick, simple, and a great way to earn extra income.
+                </p>
+                <a href="@Url.Action("AddApartment", "Owner")" class="btn btn-lg text-primary px-3">
+                    <i class="bi bi-plus-circle me-2"></i>List Your Apartment
+                </a>
+            </div>
+        }
+        else
+        {
+            <div class="row gap-5 d-flex justify-content-center mb-5" style="margin-top:40px">
+                <h2 class=" text-center">Key info</h2>
+                <!-- Card 1 -->
+                <div class="col-lg-3 ">
+                    <div class="container card bg-light shadow-sm">
+                        <div class="row">
+                            <div class="col-8 p-3">
+                                <p>Total revenu</p>
+                                <h1>@Model.TotalReveniew <span class="fs-5 text-success">JOD</span></h1>
+                                <div class="row ">
+                                </div>
+                            </div>
+                            <div class="col-4 d-flex justify-content-start pt-4">
+                                <div class="container purple-without-hover d-flex justify-content-center p-3 rounded"
+                                     style="width: 65px;height: 65px;">
+                                    <img src="@Url.Content("~/images/dollar-sign.svg")">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+
+                <div class="col-lg-3 gap-2">
+                    <div class="container card bg-light shadow-sm">
+                        <div class="row">
+                            <div class="col-8 p-3">
+                                <p>Total bookings</p>
+                                <h1>@Model.TotalBookings</h1>
+
+                            </div>
+                            <div class="col-4 d-flex justify-content-start pt-4">
+                                <div class="container purple-without-hover d-flex justify-content-center p-3 rounded"
+                                     style="width: 65px;height: 65px;">
+                                    <img src="@Url.Content("~/images/booking-sign.svg")">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+
+                <div class="col-lg-3 gap-2">
+                    <div class="container card bg-light shadow-sm">
+                        <div class="row">
+                            <div class="col-8 p-3">
+                                <p>Total Apparts</p>
+                                <h1>@Model.TotalApart</h1>
+
+                            </div>
+                            <div class="col-4 d-flex justify-content-start pt-4">
+                                <div class="container purple-without-hover d-flex justify-content-center p-3 rounded"
+                                     style="width: 65px;height: 65px;">
+                                    <img src="@Url.Content("~/images/appartment-sign.svg")">
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Appartments section -->
+            <div class="container py-5 mt-5">
+                <h2 class="text-center mb-5">My Apartments</h2>
+
+                <div class="table-responsive">
+                    <table class="table table-hover  align-middle">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Apartment Name</th>
+                                <th>Image</th>
+                                <th>Availability</th>
+                                <th>Price per Night</th>
+                                <th class="text-center">Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var ap in Model.OwnerAparts)
+                            {
+                                <tr>
+                                    <td class="fw-bold">@ap.Name</td>
+                                    <td>
+                                        <img src="@ap.MainImage" class="rounded img-fluid" alt="@ap.Name" style="max-width: 75px; max-height: 50px; object-fit: cover;">
+                                    </td>
+                                    <td>
+                                        @if (ap.IsAvailable)
+                                        {
+                                            <span class="badge bg-success">Available</span>
+                                        }
+                                        else
+                                        {
+                                            <span class="badge bg-danger">Unavailable</span>
+                                        }
+                                    </td>
+                                    <td class="text-nowrap">$@ap.PricePerNight</td>
+                                    <td class="text-center px-5">
+                                        <div class="btn-group" role="group" aria-label="Apartment Actions">
+                                            <a class="btn btn-sm btn-outline-primary"  asp-action="UpdateApartment" asp-controller="Owner" asp-route-id="@ap.Id">
+                                               Edit
+                                            </a>
+                                            <form id="delete-form-@ap.Id" asp-action="DeleteConfirmed"  asp-controller="Owner" asp-route-id="@ap.Id" method="post" style="display:inline;">
+                                                <button type="button" style="border-left:none" class="btn btn-sm btn-outline-danger" onclick="confirmDelete('@ap.Id')">
+                                                  Delete
+                                                </button>
+                                            </form>
+                                        </div>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        }
+
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script>
+        // Confirm Delete Function
+        function confirmDelete(apartmentId) {
+            Swal.fire({
+                title: 'Are you sure?',
+                text: "You won't be able to revert this!",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#d33',
+                cancelButtonColor: '#3085d6',
+                confirmButtonText: 'Yes, delete it!',
+                cancelButtonText: 'Cancel'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    // Submit the form programmatically
+                    document.getElementById(`delete-form-${apartmentId}`).submit();
+                }
+            });
+        }
+
+        // Additional DOM Initialization Logic
+        document.addEventListener("DOMContentLoaded", function () {
+            const showNavbar = (toggleId, navId, bodyId, headerId) => {
+                const toggle = document.getElementById(toggleId),
+                    nav = document.getElementById(navId),
+                    bodypd = document.getElementById(bodyId),
+                    headerpd = document.getElementById(headerId);
+
+                if (toggle && nav && bodypd && headerpd) {
+                    toggle.addEventListener('click', () => {
+                        nav.classList.toggle('show');
+                        toggle.classList.toggle('bx-x');
+                        bodypd.classList.toggle('body-pd');
+                        headerpd.classList.toggle('body-pd');
+                    });
+                }
+            };
+
+            showNavbar('header-toggle', 'nav-bar', 'body-pd', 'header');
+
+            const linkColor = document.querySelectorAll('.nav_link');
+
+            function colorLink() {
+                if (linkColor) {
+                    linkColor.forEach(l => l.classList.remove('active'));
+                    this.classList.add('active');
+                }
+            }
+            linkColor.forEach(l => l.addEventListener('click', colorLink));
+        });
+    </script>
+
+</body>
+</html>

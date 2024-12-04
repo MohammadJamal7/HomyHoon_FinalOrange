@@ -1,0 +1,232 @@
+﻿@{
+    Layout = "~/Views/Shared/_GenrealView.cshtml";
+}
+
+@model HomyHoon_Ecommerce.ViewModels.IndexPageViewModel
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+
+    
+    <style>
+
+
+        html,body{
+            font-family: "Archivo", sans-serif;
+        }
+
+        .purple {
+            background-color: #6f42c1; /* Custom purple color */
+            color: white;
+        }
+        .purple-color{
+            color: #6f42c1;
+        }
+        .purple-without-hover{
+            background-color: #6f42c1; /* Custom purple color */
+            color: white;
+        }
+        .purple:hover {
+            background-color: #5a379d; /* Darker purple on hover */
+            color: white;
+        }
+
+
+        .img-section {
+            height: 80vh;
+            background-image: url('@Url.Content("~/images/welcome-image.png")');
+            background-size: cover;
+            background-position: center;
+
+        }
+
+        .Categories-section {
+            padding-bottom: 2rem;
+        }
+
+        .category {
+            width: 100%;
+            max-width: 381px;
+            height: auto;
+            max-height: 158px;
+            background: #FFFFFF;
+            box-shadow: 0px 0px 2px rgba(23, 26, 31, 0.12), 0px 0px 1px rgba(23, 26, 31, 0.07);
+            border-radius: 6px;
+            padding: 1rem;
+            margin-bottom: 1.5rem; /* Adds space between categories */
+        }
+
+        .card-btn-style {
+            background-color: white;
+            border: 1px solid #636AE8;
+            color: #636AE8;
+        }
+
+        .card-btn-style:hover {
+            background-color: #5a379d; /* Darker purple on hover */
+            color: white;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div id="navbar-placeholder"></div>
+
+    <!-- Image section -->
+    <div class="img-section d-flex flex-column p-4" style="margin-top: 65px">
+        <h1 style="max-width: 600px" class="mt-5">Your dream home awaits at HomyHoon!</h1>
+        <br />
+        <p style="max-width: 550px" class="fs-4">
+            <strong>HomyHoon</strong> connects you with property owners in Jordan to easily find and
+            rent or buy your dream home without agents.
+        </p>
+        <button style="max-width: 300px;" class="btn purple">
+            <a href="@Url.Action("Index","Apartments")" style="text-decoration: none;color: inherit;">Discover now</a>
+        </button>
+    </div>
+
+    <h2 class="text-center py-4 mt-5 mb-2">Categories</h2>
+    <div class="Categories-section container mb-0 ">
+        <div class="row gap-4 pt-3">
+            <!-- categories -->
+            
+            <div class="d-flex flex-row flex-wrap ">
+                @foreach (var category in Model.Categories)
+                {
+                    <div class="col-lg-4 col-sm-2 col-md-6 mt-2">
+
+                        <div class="container d-flex category align-items-center mb-0">
+                            <div class="col">
+                                <div class="col">
+                                    <h3>@category.Name</h3>
+                                    <p style="font-size:small">@category.Description</p>
+                                    <a class="btn card-btn-style" asp-controller="Apartments" asp-action="Index" asp-route-categoryName="@category.Name">View All</a>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <img src="@Url.Content(category.ImagePath)" alt="Villas image" style="width: 91%; height: 126px; border-radius: 10px;">
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                }
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- Locations -->
+    <h2 class="text-center py-4 mt-2 mb-2 ">Featured locations</h2>
+    <div class="Categories-section container mb-0 ">
+        <div class="row gap-4 pt-3">
+            <!-- category1 -->
+            <div class="container d-flex category align-items-center mb-0">
+                <div class="col">
+                    <div class="col">
+                        <h3>Amman</h3>
+                        <p>Modern capital, ancient roots, vibrant culture.</p>
+                        <a class="btn card-btn-style" asp-controller="Apartments" asp-action="Index" asp-route-city="Amman">View All</a>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="@Url.Content("~/images/loc1.png")" alt="Villas image" style="width: 91%;
+height: 126px; border-radius: 10px;">
+                </div>
+
+                <!-- catergory2 -->
+            </div>
+            <div class="container d-flex category align-items-center">
+                <div class="col">
+                    <div class="col">
+                        <h3>Jarash</h3>
+
+                        <p>Historic charm, Roman ruins nestled in nature.</p>
+                        <a class="btn card-btn-style" asp-controller="Apartments" asp-action="Index" asp-route-city="Jarash">View All</a>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="@Url.Content("~/images/jarash.jpeg")" alt="Villas Flats" style="width: 91%;
+ height: 126px; border-radius: 10px;">
+                </div>
+                <!-- category3 -->
+            </div>
+            <div class="container d-flex category align-items-center">
+                <div class="col">
+                    <div class="col">
+                        <h3>Irbid</h3>
+                        <p>Historic city, academic hub, olive groves.</p>
+                        <a class="btn card-btn-style" asp-controller="Apartments" asp-action="Index" asp-route-city="Irbid">View All</a>
+
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="@Url.Content("~/images/loc3.png")" alt="Villas image" style="width: 91%;
+ height: 126px; border-radius: 10px;">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Do you have quesions section -->
+    <div class="container w-75 py-4 px-1 mt-5 mb-3 purple-without-hover rounded">
+        <h2 class="text-center">Do you have questions?</h2>
+    </div>
+
+
+    <!-- Contact-section -->
+    <div class="container my-5 border py-4 " style="height: auto; margin-bottom: 200px;">
+        <div class="row">
+            <div class="col px-4">
+                <form method="post" asp-action="SaveMessageToDb" asp-controller="Message" class="h-100">
+                    <h1 class="purple-color text-center">Contact Us</h1>
+                    
+                    <!-- Name input -->
+                    <div class="form-group">
+                        <label asp-for="@Model.Message.SenderName" class="text-center fw-bold"></label>
+                        <input type="text" class="form-control" asp-for="@Model.Message.SenderName" placeholder="Enter your name" required>
+                    </div>
+
+                    <!-- Email input -->
+                    <div class="form-group">
+                        <label asp-for="@Model.Message.SenderEmail" class="text-center fw-bold"></label>
+                        <input type="email" class="form-control" asp-for="@Model.Message.SenderEmail" placeholder="your@email.com" required>
+                    </div>
+
+                    <!-- Question input -->
+                    <div class="form-group">
+                        <label asp-for="@Model.Message.Subject" class="text-center fw-bold">Question</label>
+                        <textarea asp-for="@Model.Message.Subject" class="form-control" rows="4" required>What's your question?'</textarea>
+                    </div>
+
+                    <button type="submit" class="btn purple rounded mt-2 w-25">Submit</button>
+                </form>
+
+            </div>
+
+            <div class="col d-none d-md-block">
+                <!--  
+                 <img src="@Url.Content("~/images/map2.png")" class="rounded img-fluid" height="auto" alt="Fake map" style="max-height: 336px;max-width: 636px;">
+                 -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1598.5168986654382!2d35.851858431818066!3d32.54070702740367!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151c76916dac0453%3A0x5416e113d81f7d82!2z2KXYsdio2K8!5e1!3m2!1sar!2sjo!4v1731705755336!5m2!1sar!2sjo" width="636" height="336" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+
+        </div>
+    </div>
+
+   
+    
+
+</body>
+</html>

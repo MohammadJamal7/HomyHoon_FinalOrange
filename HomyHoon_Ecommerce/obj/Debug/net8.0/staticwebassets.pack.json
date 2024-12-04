@@ -1,0 +1,597 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\HomyHoon_Ecommerce.bundle.scp.css",
+      "PackagePath": "staticwebassets\\HomyHoon_Ecommerce.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\images\\air.svg",
+      "PackagePath": "staticwebassets\\images\\air.svg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\images\\appart1.jpg",
+      "PackagePath": "staticwebassets\\images\\appart1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\images\\appartment-sign.svg",
+      "PackagePath": "staticwebassets\\images\\appartment-sign.svg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\images\\booking-sign.svg",
+      "PackagePath": "staticwebassets\\images\\booking-sign.svg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\images\\calendar.svg",
+      "PackagePath": "staticwebassets\\images\\calendar.svg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\images\\category1.png",
+      "PackagePath": "staticwebassets\\images\\category1.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\images\\category2.png",
+      "PackagePath": "staticwebassets\\images\\category2.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\images\\category3.png",
+      "PackagePath": "staticwebassets\\images\\category3.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\images\\dollar-sign.svg",
+      "PackagePath": "staticwebassets\\images\\dollar-sign.svg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\images\\empty.jpg",
+      "PackagePath": "staticwebassets\\images\\empty.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\images\\facebook.png",
+      "PackagePath": "staticwebassets\\images\\facebook.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\images\\first-aid.svg",
+      "PackagePath": "staticwebassets\\images\\first-aid.svg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\images\\heating.svg",
+      "PackagePath": "staticwebassets\\images\\heating.svg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\images\\home2.png",
+      "PackagePath": "staticwebassets\\images\\home2.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\images\\info.svg",
+      "PackagePath": "staticwebassets\\images\\info.svg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\images\\instagram.png",
+      "PackagePath": "staticwebassets\\images\\instagram.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\images\\jarash.jpeg",
+      "PackagePath": "staticwebassets\\images\\jarash.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\images\\kitchen.svg",
+      "PackagePath": "staticwebassets\\images\\kitchen.svg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\images\\listings1.png",
+      "PackagePath": "staticwebassets\\images\\listings1.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\images\\listings2.png",
+      "PackagePath": "staticwebassets\\images\\listings2.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\images\\listings3.png",
+      "PackagePath": "staticwebassets\\images\\listings3.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\images\\loc1.png",
+      "PackagePath": "staticwebassets\\images\\loc1.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\images\\loc2.png",
+      "PackagePath": "staticwebassets\\images\\loc2.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\images\\loc3.png",
+      "PackagePath": "staticwebassets\\images\\loc3.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\images\\logo-color.png",
+      "PackagePath": "staticwebassets\\images\\logo-color.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\images\\logo-icon-white.png",
+      "PackagePath": "staticwebassets\\images\\logo-icon-white.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\images\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\images\\logo_footer.png",
+      "PackagePath": "staticwebassets\\images\\logo_footer.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\images\\map2.png",
+      "PackagePath": "staticwebassets\\images\\map2.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\images\\owner.png",
+      "PackagePath": "staticwebassets\\images\\owner.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\images\\parking.svg",
+      "PackagePath": "staticwebassets\\images\\parking.svg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\images\\profile.jpg",
+      "PackagePath": "staticwebassets\\images\\profile.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\images\\profile2.jpg",
+      "PackagePath": "staticwebassets\\images\\profile2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\images\\slide1.png",
+      "PackagePath": "staticwebassets\\images\\slide1.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\images\\slide2.jpg",
+      "PackagePath": "staticwebassets\\images\\slide2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\images\\slide3.jpg",
+      "PackagePath": "staticwebassets\\images\\slide3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\images\\tv.svg",
+      "PackagePath": "staticwebassets\\images\\tv.svg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\images\\uploads\\24c37084-48f6-44eb-931f-59ea48fac905_beach-house-pool-9.jpg",
+      "PackagePath": "staticwebassets\\images\\uploads\\24c37084-48f6-44eb-931f-59ea48fac905_beach-house-pool-9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\images\\uploads\\2ac575e0-42de-4212-a1cd-9edf2039e5f7_th (1).jpeg",
+      "PackagePath": "staticwebassets\\images\\uploads\\2ac575e0-42de-4212-a1cd-9edf2039e5f7_th (1).jpeg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\images\\uploads\\2b1a6685-08dc-46f6-b5d4-074e0e6c5dc7_air-conditioner-svgrepo-com.svg",
+      "PackagePath": "staticwebassets\\images\\uploads\\2b1a6685-08dc-46f6-b5d4-074e0e6c5dc7_air-conditioner-svgrepo-com.svg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\images\\uploads\\2dbd35c3-aae0-4203-9e53-1c07ee61dbed_energy-fire-heat-svgrepo-com.svg",
+      "PackagePath": "staticwebassets\\images\\uploads\\2dbd35c3-aae0-4203-9e53-1c07ee61dbed_energy-fire-heat-svgrepo-com.svg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\images\\uploads\\6008d420-7e56-4fa4-a2bb-0442bcd93253_energy-fire-heat-svgrepo-com (1).svg",
+      "PackagePath": "staticwebassets\\images\\uploads\\6008d420-7e56-4fa4-a2bb-0442bcd93253_energy-fire-heat-svgrepo-com (1).svg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\images\\uploads\\60bddda4-9408-435d-9bb4-13572e44870b.png",
+      "PackagePath": "staticwebassets\\images\\uploads\\60bddda4-9408-435d-9bb4-13572e44870b.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\images\\uploads\\662923ab-a772-48e5-bb31-bb67addcc448_download (2).jpeg",
+      "PackagePath": "staticwebassets\\images\\uploads\\662923ab-a772-48e5-bb31-bb67addcc448_download (2).jpeg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\images\\uploads\\6a2f61ba-1a23-49bb-a844-b6482c493c4e_beach-house-pool-9.jpg",
+      "PackagePath": "staticwebassets\\images\\uploads\\6a2f61ba-1a23-49bb-a844-b6482c493c4e_beach-house-pool-9.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\images\\uploads\\97f16385-56ff-4b54-8abd-e2b0128daf34_Kiln-Apartments-1.jpg",
+      "PackagePath": "staticwebassets\\images\\uploads\\97f16385-56ff-4b54-8abd-e2b0128daf34_Kiln-Apartments-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\images\\uploads\\98039a8e-4304-4958-abfb-8b858ebb1985_modern-luxury-villa-pool-medulin-croatia-13-1.jpg",
+      "PackagePath": "staticwebassets\\images\\uploads\\98039a8e-4304-4958-abfb-8b858ebb1985_modern-luxury-villa-pool-medulin-croatia-13-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\images\\uploads\\9cb1b782-ba41-4dcf-8f68-03efa4f80b91_Kiln-Apartments-1.jpg",
+      "PackagePath": "staticwebassets\\images\\uploads\\9cb1b782-ba41-4dcf-8f68-03efa4f80b91_Kiln-Apartments-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\images\\uploads\\a63fd983-aa07-4cdc-a886-55dd6cebdb6c_energy-fire-heat-svgrepo-com.svg",
+      "PackagePath": "staticwebassets\\images\\uploads\\a63fd983-aa07-4cdc-a886-55dd6cebdb6c_energy-fire-heat-svgrepo-com.svg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\images\\uploads\\a9863bc1-de87-4256-8286-8845f2da1f91_OIP (1).jpeg",
+      "PackagePath": "staticwebassets\\images\\uploads\\a9863bc1-de87-4256-8286-8845f2da1f91_OIP (1).jpeg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\images\\uploads\\a9ddd98b-dc41-4d1d-b9cc-89d02b563ad5_parking-svgrepo-com.svg",
+      "PackagePath": "staticwebassets\\images\\uploads\\a9ddd98b-dc41-4d1d-b9cc-89d02b563ad5_parking-svgrepo-com.svg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\images\\uploads\\ccd55e6c-45c4-4316-bd3e-787ab28d9996_th (1).jpeg",
+      "PackagePath": "staticwebassets\\images\\uploads\\ccd55e6c-45c4-4316-bd3e-787ab28d9996_th (1).jpeg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\images\\uploads\\d1a68369-d7db-40e8-a185-7ed10de55d8c_th (2).jpeg",
+      "PackagePath": "staticwebassets\\images\\uploads\\d1a68369-d7db-40e8-a185-7ed10de55d8c_th (2).jpeg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\images\\uploads\\dad1c167-885e-45b6-8810-428b1c43a32b_Kiln-Apartments-1.jpg",
+      "PackagePath": "staticwebassets\\images\\uploads\\dad1c167-885e-45b6-8810-428b1c43a32b_Kiln-Apartments-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\images\\uploads\\f1a7fce4-b207-4712-96b8-f2655e2a65ad_pixelcut-export.png",
+      "PackagePath": "staticwebassets\\images\\uploads\\f1a7fce4-b207-4712-96b8-f2655e2a65ad_pixelcut-export.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\images\\uploads\\f2214ab0-9c53-4ba7-a9f9-4491c4e5ada3_تصميم بدون عنوان (5).png",
+      "PackagePath": "staticwebassets\\images\\uploads\\f2214ab0-9c53-4ba7-a9f9-4491c4e5ada3_تصميم بدون عنوان (5).png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\images\\welcome-image.png",
+      "PackagePath": "staticwebassets\\images\\welcome-image.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\images\\whatsapp.png",
+      "PackagePath": "staticwebassets\\images\\whatsapp.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\images\\wifi.svg",
+      "PackagePath": "staticwebassets\\images\\wifi.svg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\uploads\\apartments\\20ca821f-9d57-4fd3-86b9-0534b63d287f.svg",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\20ca821f-9d57-4fd3-86b9-0534b63d287f.svg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\uploads\\apartments\\322293ef-664a-4f0e-874d-a0f12d29d019.svg",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\322293ef-664a-4f0e-874d-a0f12d29d019.svg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\uploads\\apartments\\3430498e-a4f2-46f3-9bbf-9a51bdaae0e5.png",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\3430498e-a4f2-46f3-9bbf-9a51bdaae0e5.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\uploads\\apartments\\3c9cadbd-44ba-479a-bee7-8f67f7cdf6fb.png",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\3c9cadbd-44ba-479a-bee7-8f67f7cdf6fb.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\uploads\\apartments\\4ef65c6d-be3e-475c-b3c6-4f8dba3208aa.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\4ef65c6d-be3e-475c-b3c6-4f8dba3208aa.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\uploads\\apartments\\50b1b36a-7a68-43e0-bfcb-d28f4ab4dc3d.jpg",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\50b1b36a-7a68-43e0-bfcb-d28f4ab4dc3d.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\uploads\\apartments\\5387e2ca-128c-4f3a-b63b-7b494d4a5f63.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\5387e2ca-128c-4f3a-b63b-7b494d4a5f63.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\uploads\\apartments\\58b18fd9-0f6f-4b78-ba65-3b446a5345b9.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\58b18fd9-0f6f-4b78-ba65-3b446a5345b9.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\uploads\\apartments\\5a2b2e0d-06aa-47fc-ad1a-d96bdc293ba1.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\5a2b2e0d-06aa-47fc-ad1a-d96bdc293ba1.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\uploads\\apartments\\5f4b2a6b-605e-429a-a119-0e49ef65c20c.svg",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\5f4b2a6b-605e-429a-a119-0e49ef65c20c.svg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\uploads\\apartments\\64f5e5a9-dbe3-46cc-82d6-cdf98a369c75.png",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\64f5e5a9-dbe3-46cc-82d6-cdf98a369c75.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\uploads\\apartments\\6fbfbb3d-129b-4a90-994b-08c5adcd1070.png",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\6fbfbb3d-129b-4a90-994b-08c5adcd1070.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\uploads\\apartments\\703e0f27-9e87-4dea-8687-124ff9416d85.png",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\703e0f27-9e87-4dea-8687-124ff9416d85.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\uploads\\apartments\\89a808d3-92d6-4232-9aec-39045a3ca4f2.png",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\89a808d3-92d6-4232-9aec-39045a3ca4f2.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\uploads\\apartments\\93d3ea6e-eec6-4836-a7e6-faa26d20e825.png",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\93d3ea6e-eec6-4836-a7e6-faa26d20e825.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\uploads\\apartments\\97bc4d68-140a-4857-9ad5-3fab06b608b1.png",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\97bc4d68-140a-4857-9ad5-3fab06b608b1.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\uploads\\apartments\\99bd3a24-8adc-47c7-9599-6bb94663c57b.png",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\99bd3a24-8adc-47c7-9599-6bb94663c57b.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\uploads\\apartments\\aa6dadd8-6e3f-446d-ab35-2b52b745648d.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\aa6dadd8-6e3f-446d-ab35-2b52b745648d.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\uploads\\apartments\\c3c5015b-8513-4926-81b8-4906097da152.png",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\c3c5015b-8513-4926-81b8-4906097da152.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\uploads\\apartments\\d39c0163-d92f-4f2b-959d-e4d7c3a621e3.png",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\d39c0163-d92f-4f2b-959d-e4d7c3a621e3.png"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\uploads\\apartments\\e007de42-d852-4c89-903e-81a0ca12e289.jpg",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\e007de42-d852-4c89-903e-81a0ca12e289.jpg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\uploads\\apartments\\fab61f47-569f-46ec-a190-82b9288af8a2.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\fab61f47-569f-46ec-a190-82b9288af8a2.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\uploads\\apartments\\fd274399-7dd8-4ce3-b311-a97064812ce8.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\fd274399-7dd8-4ce3-b311-a97064812ce8.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\pc\\Desktop\\.Net projs\\HomyHoon_Ecommerce\\HomyHoon_Ecommerce\\wwwroot\\uploads\\apartments\\fdf2d87e-5854-44af-a6cc-cf2ba8b955b5.svg",
+      "PackagePath": "staticwebassets\\uploads\\apartments\\fdf2d87e-5854-44af-a6cc-cf2ba8b955b5.svg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.HomyHoon_Ecommerce.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.HomyHoon_Ecommerce.props",
+      "PackagePath": "build\\HomyHoon_Ecommerce.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.HomyHoon_Ecommerce.props",
+      "PackagePath": "buildMultiTargeting\\HomyHoon_Ecommerce.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.HomyHoon_Ecommerce.props",
+      "PackagePath": "buildTransitive\\HomyHoon_Ecommerce.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

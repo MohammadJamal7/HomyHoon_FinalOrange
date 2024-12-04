@@ -1,0 +1,365 @@
+﻿@{
+    Layout = "~/Views/Shared/_GenrealView.cshtml";
+}
+@model HomyHoon_Ecommerce.ViewModels.DetailsViewModel
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+    <style>
+
+        html,
+        body {
+            font-family: "Archivo", sans-serif;
+            height: 100%;
+            margin: 0;
+            overflow-x: hidden;
+        }
+
+        .purple {
+            background-color: #6f42c1;
+            color: white;
+        }
+
+        .purple-color {
+            color: #6f42c1;
+        }
+
+        .purple:hover {
+            background-color: #5a379d;
+            color: white;
+        }
+
+        .carousel-inner img {
+            height: auto;
+            max-height: 550px;
+            /* Set a max height */
+        }
+
+        /* @@media (max-width: 768px) {
+            .carousel-inner img {
+                max-height: 300px ;
+            }
+
+            .col-5, .col-7 {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+        } */
+    </style>
+
+</head>
+
+<body>
+    <div id="mynav"></div>
+    
+    <div class="container-fluid " style="margin-top: 80px;">
+        
+        <div class="row g-3">
+          
+           
+            <!-- Left Column: Reservation Form -->
+            <div class="col-lg-5 col-md-6 col-sm-12 ps-3 d-flex flex-column justify-content-start align-items-center">
+  
+                    <h4 class="text-center mt-3">@Model.Apartment.Name</h4>
+               
+                
+                
+               
+                    <form method="post" asp-action="Reserve" asp-controller="Reservation">
+
+                        <input type="hidden" name="ApartmentId" value="@Model.Apartment.Id" />
+                        <div class="container mb-4 rounded shadow-sm p-4 w-100 ps-5">
+                            <div class="row">
+                                <div class="col">
+                                    <p class="fs-5"><strong>$@Model.Apartment.PricePerNight</strong>/night</p>
+                                </div>
+                                <div class="row mb-1 fw-bold">
+                                    <div class="col-6">Check in</div>
+                                    <div class="col-6">Check out</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-6">
+                                        <input type="date" name="CheckIn" min="@DateTime.Now.ToString("yyyy-MM-dd")" required
+                                               class="form-control border-bottom border-1 border-secondary">
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="date" name="CheckOut" min="@DateTime.Now.AddDays(1).ToString("yyyy-MM-dd")" required
+                                               class="form-control border-bottom border-1 border-secondary">
+                                    </div>
+                                </div>
+                                <div class="row mt-4 mb-5">
+                                    <div class="col">
+                                        <strong>Guests</strong>
+                                        <select name="Guests" id="Guests" class="form-select border-bottom border-1" required>
+                                            @for (int i = 0; i <= Model.Apartment.MaxGuests; i++)
+                                            {
+                                                <option value="@i">@i Guest@(i != 1 ? "s" : "")</option>
+                                            }
+                                        </select>
+                                    </div>
+                                </div>
+                                
+                    </form>
+                
+                       <div class="row">
+                               <div class="col text-start">
+                                <p>$@Model.Apartment.PricePerNight <strong>x</strong> <span id="nights"></span></p>
+                            </div>
+                            <div class="col text-end">
+                                <p class="purple-color">-</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col text-start">
+                                <span>Service fee</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                     stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <line x1="12" y1="16" x2="12" y2="12"></line>
+                                    <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                                </svg>
+                            </div>
+                            <div class="col text-end">
+                                <p class="purple-color">$3</p>
+                            </div>
+                        </div>
+                        <div class="row pe-4">
+                            <div class="col-12">
+                                <hr>
+                            </div>
+                        </div>
+                        <div class="row pe-4">
+                           
+                          
+                        </div>
+                        <div class="row pe-4 py-2">
+                            <div class="col-12">
+                        @if (Model.IsReserved)
+                        {
+                            <p class="text-danger">@Model.AvailableDateMessage</p>
+                        }
+                        else
+                        {
+                            <!-- Reserved Message -->
+                            <button class="btn purple w-100">Reserve</button>
+                        }
+                    </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12 text-center fs-6">
+                                <small>You won't be charged yet</small>
+                            </div>
+                        </div>
+                
+                    </div>
+                </div>
+            </div>
+                  
+            <!-- Right Column: Image Slider -->
+    <div class="col-lg-7 col-md-6 col-sm-12 mt-5">
+        <div class="container">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    @if (Model.Apartment.Images?.Any() ?? false)
+                    {
+                        int index = 0;
+                        foreach (var image in Model.Apartment.Images)
+                        {
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="@index"
+                                    class="@(index == 0 ? "active" : "")" aria-current="@(index == 0 ? "true" : "false")"
+                                    aria-label="Slide @(index + 1)"></button>
+                            index++;
+                        }
+                    }
+                </div>
+                <div class="carousel-inner">
+                    @if (Model.Apartment.Images?.Any() ?? false)
+                    {
+                        bool isActive = true;
+                        foreach (var image in Model.Apartment.Images)
+                        {
+                            <div class="carousel-item @(isActive ? "active" : "")">
+                                <img src="@Url.Content(image.ImageUrl)" class="d-block w-100" alt="Apartment Image">
+                            </div>
+                            isActive = false;
+                        }
+                    }
+                    else
+                    {
+                        <div class="carousel-item active">
+                            <p>No images available for this apartment.</p>
+                        </div>
+                    }
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+
+    <!-- Overview section -->
+    <div class="container p-3 ">
+        <div class="row">
+            <div class="col">
+                <div class="row mb-3 " style="margin-top:10rem;">
+                    <div class="col">
+                        <h4>Overview</h4>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col my-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="me-2" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="blue" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+                        <small>@Model.Apartment.MaxGuests guests • @Model.Apartment.Beds beds • @Model.Apartment.Baths private bath</small>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col my-3">
+                        <img src="@Url.Content("~/images/calendar.svg")" alt="">
+
+                        <small>Free cancellation for 48 hours</small>
+
+                    </div>
+                </div>
+
+                <div class="row my-4">
+                    <div class="col " style="max-width: 700px;">
+                        <p>@Model.Apartment.Description</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col"><hr></div>
+                </div>
+            </div>
+
+            <div class="col d-flex justify-content-end align-items-end rounded">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3385.3451910609583!2d35.91063517581931!3d31.953949329378034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151ca08bfab67b5b%3A0x8150ed6d47d236a6!2sAmman%2C%20Jordan!5e0!3m2!1sen!2sus!4v1698070128124!5m2!1sen!2sus"
+                        width="400px"
+                        height="350px"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </div>
+
+        <!-- Featues in the place -->
+        <div class="row my-4 ">
+            <div class="col">
+                <h4>This place offers</h4>
+            </div>
+        </div>
+
+        <div class="row text-start py-2" style="width: 70%;">
+            @if (Model.Apartment.Kitchen)
+            {
+                <div class="col-6">
+                    <img src="@Url.Content("~/images/kitchen.svg")" alt="">
+                    <span class="mx-3 fs-5">kitchen</span>
+                </div>
+            }
+            @if (Model.Apartment.FirstAid)
+            {
+                <div class="col-6">
+                    <img src="@Url.Content("~/images/first-aid.svg")" alt="">
+                    <span class="mx-3 fs-5">First aid</span>
+                </div>
+            }
+        </div>
+           <div class="row text-start py-2" style="width: 70%;">
+            @if (Model.Apartment.Heating)
+            {
+                <div class="col-6">
+                    <img src="@Url.Content("~/images/Heating.svg")" style="max-height:30px" alt="">
+                    <span class="mx-3 fs-5">Heating</span>
+                </div>
+            }
+            @if (Model.Apartment.Parking)
+            {
+                <div class="col-6">
+                    <img src="@Url.Content("~/images/parking.svg")" style="max-height:30px" alt="">
+                    <span class="mx-3 fs-5">Parking</span>
+                </div>
+            }
+          </div>
+        
+        <div class="row text-start py-2" style="width: 70%;">
+            @if (Model.Apartment.Wifi)
+            {
+                <div class="col-6">
+                    <img src="@Url.Content("~/images/wifi.svg")" alt="">
+                    <span class="mx-3 fs-5">Free Wifi</span>
+                </div>
+            }
+
+            @if (Model.Apartment.TV)
+            {
+                <div class="col-6">
+                    <img src="@Url.Content("~/images/tv.svg")" alt="">
+                    <span class="mx-3 fs-5">TV</span>
+                </div>
+            }
+           
+        </div>
+
+        <div class="row text-start py-2" style="width: 70%;">
+            @if (Model.Apartment.AirConditioning)
+            {
+                <div class="col-6">
+                    <img src="@Url.Content("~/images/air.svg")" style="max-height:30px" alt="">
+                    <span class="mx-3 fs-5">Air conditioning</span>
+                </div>
+            }
+        </>
+    </div>
+
+    <div id="myFooter"></div>
+    <script src="https://cdn.jsdelivr.net/npm/@@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+   <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            // Get the select element
+            var guestsSelect = document.getElementById("Guests");
+
+            // Function to update the displayed nights/guests
+            function updateDisplay() {
+                var numGuests = guestsSelect.value;  // Get the current value of the select element
+                var nightsDisplay = document.getElementById("nights");
+                nightsDisplay.textContent = numGuests;  // Update the display
+            }
+
+            // Add event listener for change events on the select element
+            guestsSelect.addEventListener('change', updateDisplay);
+
+            // Initial update in case the initial selection is not zero
+            updateDisplay();
+        });
+       function GoBack() { window.history.back(); }
+   </script>
+
+</body>
+
+</html>

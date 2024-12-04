@@ -1,0 +1,126 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | HomyHoon</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <style>
+        .bg-purple {
+            background-color: #6f42c1;
+        }
+
+        .btn-outline-purple {
+            border-color: #6f42c1;
+            color: #6f42c1;
+        }
+
+            .btn-outline-purple:hover {
+                background-color: #6f42c1;
+                color: white;
+            }
+
+        .btn-purple {
+            background-color: #6f42c1;
+            color: white;
+        }
+
+            .btn-purple:hover {
+                background-color: #5a379d;
+                color: white;
+            }
+    </style>
+</head>
+<body class="bg-light">
+    <div class="container-fluid vh-100 p-0">
+
+     
+
+        <div class="row h-100 g-0">
+            <!-- Left Side - Form -->
+            <div class="col-md-8 d-flex align-items-center">
+                <div class="w-100 px-4 px-md-5">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <h2 class="text-center mb-4 fw-bold" style="color: #6f42c1;">Welcome Back!</h2>
+
+                            <!-- Error Summary -->
+                            <div asp-validation-summary="All" class="text-danger mb-3"></div>
+
+                          
+
+                            <!-- Divider -->
+                            <div class="row align-items-center mb-4">
+                                <div class="col"><hr></div>
+                                <div class="col-auto"> Login with email</div>
+                                <div class="col"><hr></div>
+                            </div>
+
+                            <!-- Login Form -->
+                            <form method="post" asp-action="Login" asp-controller="Account">
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="email" name="Email" placeholder="name@example.com" required>
+                                    <label for="email">Email Address</label>
+                                </div>
+
+                                <div class="form-floating mb-3">
+                                    <input type="password" class="form-control" id="password" name="Password" placeholder="Password" required>
+                                    <label for="password">Password</label>
+                                   
+                                </div>
+
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="RememberMe" name="RememberMe" value="true">
+                                    <!-- Add a hidden field to ensure the value is sent when unchecked -->
+                                    <input type="hidden" name="RememberMe" value="false" />
+                                    <label class="form-check-label small" for="RememberMe">
+                                        Remember me
+                                    </label>
+                                </div>
+
+                                <div class="d-grid">
+                                    <button class="btn btn-purple py-2" type="submit">Sign In</button>
+                                </div>
+
+                                <p class="text-center mt-4 mb-0">
+                                    Don't have an account?
+                                    <a href="@Url.Action("Register", "Account")" class="text-decoration-none" style="color: #6f42c1;">Create Account</a>
+                                </p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side - Welcome Section -->
+            <div class="col-md-4 d-none d-md-flex bg-purple text-white">
+                <div class="d-flex flex-column justify-content-center align-items-center p-5 text-center w-100">
+                    <img src="@Url.Content("~/images/logo-icon-white.png")" alt="HomyHoon" class="mb-4" style="width: 80px;">
+                    <h3 class="mb-3">Welcome to HomyHoon</h3>
+                    <p class="mb-4">Find your dream home with our expertly curated selection of properties.</p>
+
+                    <div class="row w-100 mt-4 g-4">
+                        <div class="col-6 text-center">
+                            <h4 class="mb-0">2M+</h4>
+                            <small>Properties</small>
+                        </div>
+                        <div class="col-6 text-center">
+                            <h4 class="mb-0">500K+</h4>
+                            <small>Happy Clients</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.11/jquery.validate.unobtrusive.min.js"></script>
+</body>
+</html>

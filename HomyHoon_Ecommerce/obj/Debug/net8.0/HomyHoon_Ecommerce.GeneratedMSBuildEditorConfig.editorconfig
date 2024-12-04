@@ -1,0 +1,139 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = HomyHoon_Ecommerce
+build_property.RootNamespace = HomyHoon_Ecommerce
+build_property.ProjectDir = C:\Users\pc\Desktop\.Net projs\HomyHoon_Ecommerce\HomyHoon_Ecommerce\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\pc\Desktop\.Net projs\HomyHoon_Ecommerce\HomyHoon_Ecommerce
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/pc/Desktop/.Net projs/HomyHoon_Ecommerce/HomyHoon_Ecommerce/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Desktop/.Net projs/HomyHoon_Ecommerce/HomyHoon_Ecommerce/Views/Account/AccessDenied.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxBY2Nlc3NEZW5pZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Desktop/.Net projs/HomyHoon_Ecommerce/HomyHoon_Ecommerce/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Desktop/.Net projs/HomyHoon_Ecommerce/HomyHoon_Ecommerce/Views/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Desktop/.Net projs/HomyHoon_Ecommerce/HomyHoon_Ecommerce/Views/Apartments/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXBhcnRtZW50c1xJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Desktop/.Net projs/HomyHoon_Ecommerce/HomyHoon_Ecommerce/Views/Dash/AddCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaFxBZGRDYXRlZ29yeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Desktop/.Net projs/HomyHoon_Ecommerce/HomyHoon_Ecommerce/Views/Dash/Apartment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaFxBcGFydG1lbnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Desktop/.Net projs/HomyHoon_Ecommerce/HomyHoon_Ecommerce/Views/Dash/Categories.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaFxDYXRlZ29yaWVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Desktop/.Net projs/HomyHoon_Ecommerce/HomyHoon_Ecommerce/Views/Dash/Messages.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaFxNZXNzYWdlcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Desktop/.Net projs/HomyHoon_Ecommerce/HomyHoon_Ecommerce/Views/Dash/Users.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGFzaFxVc2Vycy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Desktop/.Net projs/HomyHoon_Ecommerce/HomyHoon_Ecommerce/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Desktop/.Net projs/HomyHoon_Ecommerce/HomyHoon_Ecommerce/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Desktop/.Net projs/HomyHoon_Ecommerce/HomyHoon_Ecommerce/Views/Message/View.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVzc2FnZVxWaWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Desktop/.Net projs/HomyHoon_Ecommerce/HomyHoon_Ecommerce/Views/Owner/AddApartment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3duZXJcQWRkQXBhcnRtZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Desktop/.Net projs/HomyHoon_Ecommerce/HomyHoon_Ecommerce/Views/Owner/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3duZXJcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Desktop/.Net projs/HomyHoon_Ecommerce/HomyHoon_Ecommerce/Views/Owner/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3duZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Desktop/.Net projs/HomyHoon_Ecommerce/HomyHoon_Ecommerce/Views/Owner/UpdateApartment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcT3duZXJcVXBkYXRlQXBhcnRtZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Desktop/.Net projs/HomyHoon_Ecommerce/HomyHoon_Ecommerce/Views/Pages/AboutUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZXNcQWJvdXRVcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Desktop/.Net projs/HomyHoon_Ecommerce/HomyHoon_Ecommerce/Views/Pages/ApartmentDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZXNcQXBhcnRtZW50RGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Desktop/.Net projs/HomyHoon_Ecommerce/HomyHoon_Ecommerce/Views/Pages/ApartmentsListing.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZXNcQXBhcnRtZW50c0xpc3RpbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Desktop/.Net projs/HomyHoon_Ecommerce/HomyHoon_Ecommerce/Views/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Desktop/.Net projs/HomyHoon_Ecommerce/HomyHoon_Ecommerce/Views/Reservation/Payment.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVzZXJ2YXRpb25cUGF5bWVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Desktop/.Net projs/HomyHoon_Ecommerce/HomyHoon_Ecommerce/Views/Shared/DashLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXERhc2hMYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Desktop/.Net projs/HomyHoon_Ecommerce/HomyHoon_Ecommerce/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Desktop/.Net projs/HomyHoon_Ecommerce/HomyHoon_Ecommerce/Views/Shared/_GenrealView.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9HZW5yZWFsVmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Desktop/.Net projs/HomyHoon_Ecommerce/HomyHoon_Ecommerce/Views/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Desktop/.Net projs/HomyHoon_Ecommerce/HomyHoon_Ecommerce/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Desktop/.Net projs/HomyHoon_Ecommerce/HomyHoon_Ecommerce/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Desktop/.Net projs/HomyHoon_Ecommerce/HomyHoon_Ecommerce/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/pc/Desktop/.Net projs/HomyHoon_Ecommerce/HomyHoon_Ecommerce/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-34imy3uwd9

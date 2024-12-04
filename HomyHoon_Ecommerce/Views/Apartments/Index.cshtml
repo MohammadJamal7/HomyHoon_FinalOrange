@@ -1,0 +1,175 @@
+﻿@model HomyHoon_Ecommerce.ViewModels.ApartmentListViewModel
+
+@{
+    Layout = "~/Views/Shared/_GenrealView.cshtml";
+}
+
+<div class="container my-5" style="margin-top:100px !important">
+    <h2 class="text-center mb-3">Apartment Listings</h2>
+
+    <!-- Main Row for Filter and Listings -->
+    <div class="row">
+        <!-- Filter Toggle Button - Only Visible on Small Screens -->
+        <div class="col-12 mb-3 d-lg-none">
+            <button class="btn btn-outline-primary w-100" type="button" data-bs-toggle="collapse" data-bs-target="#filterCollapse" aria-expanded="false" aria-controls="filterCollapse">
+                Toggle Filters
+            </button>
+        </div>
+
+        <!-- Filter Section - Always Visible on Large Screens, Collapsible on Small Screens -->
+        <div class="col-lg-3 col-md-4 col-sm-12 mb-4">
+            <div id="filterCollapse" class="collapse d-lg-block">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-purple text-white">
+                        <h5 class="mb-0 purple-color">Filters</h5>
+                    </div>
+                    <div class="card-body">
+                        <form method="get" action="@Url.Action("Index", "Apartments")">
+                            <!-- Duration Filter -->
+                            
+
+                            <!-- Category Filter -->
+                            <div class="mb-3">
+                                <h6>Category</h6>
+                                <select name="categoryName" class="form-control">
+                                    <option value="">All Categories</option>
+                                    @foreach (var category in Model.categories)
+                                    {
+                                        if (Model.CategoryFilter == category.Name)
+                                        {
+                                            <option value="@category.Name" selected>@category.Name</option>
+                                        }
+                                        else
+                                        {
+                                            <option value="@category.Name">@category.Name</option>
+                                        }
+                                    }
+                                </select>
+                            </div>
+
+                            <!-- Bedrooms Filter -->
+                            <div class="mb-3">
+                                <h6>Bedrooms</h6>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="bedrooms" value="1" id="1bed" @(Model.BedroomsFilter == 1 ? "checked" : "") />
+                                    <label class="form-check-label" for="1bed">1</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="bedrooms" value="2" id="2bed" @(Model.BedroomsFilter == 2 ? "checked" : "") />
+                                    <label class="form-check-label" for="2bed">2</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="bedrooms" value="3" id="3bed" @(Model.BedroomsFilter == 3 ? "checked" : "") />
+                                    <label class="form-check-label" for="3bed">3</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="bedrooms" value="4" id="4bed" @(Model.BedroomsFilter == 4 ? "checked" : "") />
+                                    <label class="form-check-label" for="4bed">4+</label>
+                                </div>
+                            </div>
+
+                            <!-- City Filter -->
+                            <div class="mb-3">
+                                <h6>City</h6>
+                                <select name="city" class="form-control">
+                                    <option value="">All Cities</option>
+                                    @{
+                                        var cities = new[] { "Irbid", "Amman", "Zarqa", "Jarash", "Ajloun", "Mafraq", "Aqaba", "Karak", "Tafilah", "Ma'an", "Madaba","Balqa" };
+                                        foreach (var city in cities)
+                                        {
+                                            if (Model.CityFilter == city)
+                                            {
+                                                <option value="@city" selected>@city</option>
+                                            }
+                                            else
+                                            {
+                                                <option value="@city">@city</option>
+                                            }
+                                        }
+                                    }
+                                </select>
+                            </div>
+
+                            <!-- Furnished Filter -->
+                            <div class="mb-3">
+                                <h6>Furnished</h6>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="furnished" value="Yes" id="furnishedYes" @(Model.FurnishedFilter == "Yes" ? "checked" : "") />
+                                    <label class="form-check-label" for="furnishedYes">Yes</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="furnished" value="No" id="furnishedNo" @(Model.FurnishedFilter == "No" ? "checked" : "") />
+                                    <label class="form-check-label" for="furnishedNo">No</label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="radio" name="furnished" value="" id="furnishedAll" @(string.IsNullOrEmpty(Model.FurnishedFilter) ? "checked" : "") />
+                                    <label class="form-check-label" for="furnishedAll">All</label>
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <h6>Reserved</h6>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" name="showOnlyReserved" id="showOnlyReserved" value="true" @(Model.IncludeReserved ? "checked" : "") />
+                                    <label class="form-check-label" for="showOnlyReserved">Show Only Reserved</label>
+                                    <!-- Hidden input for unchecked state -->
+                                    <input type="hidden" name="showOnlyReserved" value="false" />
+                                </div>
+                            </div>
+                            <!-- Apply Filters -->
+                            <button type="submit" class="btn purple w-100">Apply</button>
+                            <button type="button" class="btn btn-outline-dark w-100 mt-2" onclick="window.location.href='@ViewBag.ResetUrl'">Reset</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Apartment Listings -->
+        <div class="col-lg-9 col-md-8 col-sm-12">
+            <div class="row">
+                @if (Model.Apartments != null && Model.Apartments.Any())
+                {
+                    @foreach (var apartment in Model.Apartments)
+                    {
+                        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                            <div class="card shadow-sm h-100">
+                                <img src="@apartment.MainImage" style="max-height:200px" class="card-img-top" alt="Apartment Image">
+                                <div class="card-body">
+                                    <h5 class="card-title">@apartment.Name</h5>
+                                    <p class="card-text text-muted">Price: $@apartment.PricePerNight/night</p>
+                                    <p class="card-text text-muted">@apartment.Description</p>
+                                    <a href="@Url.Action("ApartmentDetails", "Pages", new { id = apartment.Id })" class="btn outlined-purple w-100">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                }
+                else
+                {
+                    <div class="col-12">
+                        <div class="text-center py-5">
+                            <img src="@Url.Content("~/images/empty.jpg")" alt="No Apartments" class="mb-4" style="max-width: 200px;">
+                            <h4 class="text-muted">No Apartments Found</h4>
+                            <p class="text-muted">Try adjusting your filters or <a href="@Url.Action("AddApartment", "Owner")" class="text-purple text-decoration-none">add a new apartment</a>.</p>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+
+    <!-- Pagination -->
+    <nav aria-label="Page navigation" class="my-4">
+        <ul class="pagination justify-content-center">
+            @for (int i = 1; i <= Model.TotalPages; i++)
+            {
+                <li class="page-item @(Model.CurrentPage == i ? "active" : "")">
+                    <a class="page-link" href="@Url.Action("Index", new { page = i,  categoryName = Model.CategoryFilter, bedrooms = Model.BedroomsFilter, city = Model.CityFilter, furnished = Model.FurnishedFilter })">
+                        @i
+                    </a>
+                </li>
+            }
+        </ul>
+    </nav>
+</div>

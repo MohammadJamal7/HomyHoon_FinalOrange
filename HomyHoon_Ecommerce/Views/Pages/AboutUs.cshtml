@@ -1,0 +1,91 @@
+﻿@{
+    Layout = "~/Views/Shared/_GenrealView.cshtml";
+}
+
+<div class="container bg-light" style="padding: 80px; margin-top: 150px; min-height: calc(100vh - 200px);">
+    <!-- About Us Section -->
+    <div class="row align-items-center mb-5">
+        <div class="col-md-6">
+            <p class="fs-6 text-uppercase text-secondary">The best renting platform in Jordan</p>
+            <h1 style="color: #6f42c1;">About Us</h1>
+            <p class="text-muted">
+                Welcome to HomyHoon, Jordan's premier platform for renting apartments, villas, and studios.
+                We connect property owners with potential tenants through a seamless, secure, and user-friendly platform.
+                At HomyHoon, we believe in making every stay memorable by providing high-quality listings and reliable services.
+            </p>
+            <p class="text-muted">
+                Whether you're a host looking to earn or a traveler seeking comfort, HomyHoon has got you covered.
+                Explore a wide range of properties tailored to your preferences and budget.
+            </p>
+            <div class="d-flex pt-4 gap-3">
+                <i class="fab fa-twitter fa-2x" style="color: #6f42c1;"></i>
+                <i class="fab fa-facebook fa-2x" style="color: #6f42c1;"></i>
+                <i class="fab fa-instagram fa-2x" style="color: #6f42c1;"></i>
+            </div>
+        </div>
+        <div class="col-md-6 text-center">
+            <div class="rounded-circle bg-gradient d-flex justify-content-center align-items-center" style="height: 300px; width: 300px; background: radial-gradient(circle, #6f42c1, #b99af4);">
+                <img src="@Url.Content("~/images/logo_footer.png")" alt="Logo" style="max-height: 200px;">
+            </div>
+        </div>
+    </div>
+
+    <!-- Key Features Section -->
+    <div class="row text-center py-5">
+        <h2 class="mb-4" style="color: #6f42c1;">Why Choose Us?</h2>
+        <div class="col-md-4">
+            <i class="bx bx-home-circle bx-lg" style="color: #6f42c1;"></i>
+            <h5 class="mt-3">Diverse Listings</h5>
+            <p class="text-muted">Choose from a variety of properties including apartments, villas, and studios.</p>
+        </div>
+        <div class="col-md-4">
+            <i class="bx bx-user-check bx-lg" style="color: #6f42c1;"></i>
+            <h5 class="mt-3">Verified Hosts</h5>
+            <p class="text-muted">All listings are verified to ensure a safe and secure experience.</p>
+        </div>
+        <div class="col-md-4">
+            <i class="bx bx-map bx-lg" style="color: #6f42c1;"></i>
+            <h5 class="mt-3">Prime Locations</h5>
+            <p class="text-muted">Find properties in the most desirable locations across Jordan.</p>
+        </div>
+    </div>
+
+    <!-- Testimonials Section -->
+    <div class="row py-5">
+        <h2 class="text-center mb-4" style="color: #6f42c1;">What Our Customers Say</h2>
+        <div class="col-md-4">
+            <div class="card shadow-sm border-0">
+                <div class="card-body">
+                    <p>"HomyHoon made finding an apartment in Amman so easy! The platform is incredibly user-friendly."</p>
+                    <h6 class="text-secondary">- Aisha H.</h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card shadow-sm border-0">
+                <div class="card-body">
+                    <p>"I hosted my villa on HomyHoon and was amazed at how quickly I found tenants. Highly recommend!"</p>
+                    <h6 class="text-secondary">- Khaled M.</h6>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card shadow-sm border-0">
+                <div class="card-body">
+                    <p>"The best renting platform in Jordan. Excellent customer support and quality listings."</p>
+                    <h6 class="text-secondary">- Leila T.</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call-to-Action Section -->
+    <div class="row text-center py-5">
+        <h2 style="color: #6f42c1;">Start Your Journey Today!</h2>
+        <p class="text-muted">Whether you're a host or a traveler, HomyHoon is here to make your renting experience smooth and enjoyable.</p>
+        <div class="d-flex justify-content-center gap-4 mt-3">
+            <a href="@Url.Action("AddApartment", "Owner")" class="btn btn-primary px-4">Become a Host</a>
+            <a href="@Url.Action("Index", "Apartments")" class="btn btn-outline-primary px-4">Find a Property</a>
+        </div>
+    </div>
+</div>

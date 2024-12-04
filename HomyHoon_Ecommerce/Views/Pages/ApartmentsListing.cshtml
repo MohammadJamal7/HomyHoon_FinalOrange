@@ -1,0 +1,266 @@
+﻿@{
+    Layout = "~/Views/Shared/_GenrealView.cshtml";
+}
+@model List<HomyHoon.Models.Apartment>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Apartments</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+          rel="stylesheet" />
+
+    <style>
+            .purple {
+            background-color: #6f42c1; /* Custom purple color */
+            color: white;
+        }
+        .purple-color{
+            color: #6f42c1;
+        }
+        .purple-without-hover{
+            background-color: #6f42c1; /* Custom purple color */
+            color: white;
+        }
+        .purple:hover {
+            background-color: #5a379d; /* Darker purple on hover */
+            color: white;
+        }
+        .outlined-purple{
+            border:1px solid #6f42c1;
+            color: #5a379d;
+        }
+        .outlined-purple:hover{
+            background-color: #6f42c1; /* Custom purple color */
+            color: white;
+        }
+
+
+        .page-link {
+            color: #6f42c1; /* Normal state color */
+        }
+
+        .page-link:hover {
+            color: #5a379c; /* Slightly darker shade on hover */
+        }
+
+        .page-item.active .page-link {
+            background-color: #6f42c1; /* Background color for active link */
+            color: white; /* White text for active link */
+            border-color: #6f42c1;
+        }
+
+        .page-item.active .page-link:hover {
+            background-color: #5a379c; /* Darker background on hover for active link */
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar-Section -->
+    <div id="mynav"></div>
+
+    <!-- Page title -->
+    <h2 class="text-center " style="margin-top: 120px">
+        Apartment
+        Listings
+    </h2>
+
+    <!-- Fitler section -->
+    <div class="container py-4 ps-4 shadow-sm" style="background-color: #FFFFFF;">
+        <div class="filter-container">
+            <h5 class="mb-4">Filters</h5>
+
+            <div class="row g-4">
+
+                <!-- Price Range -->
+                <details class="col-12 col-md-4">
+                    <summary class="fs-6 fw-bold pb-1">Price Range</summary>
+                    <div class="row g-2">
+                        <div class="col-6">
+                            <div class="price-input">
+                                <input type="number" class="form-control" placeholder="Min">
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="price-input">
+                                <input type="number" class="form-control" placeholder="Max">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slid d-flex justify-content-center pt-3">
+                        <input type="range" style="width: 70%;accent-color: #6f42c1;">
+                    </div>
+                </details>
+
+                <!-- Category -->
+                <details class="col-12 col-md-4">
+                    <summary class="fs-6 fw-bold pb-1">Category</summary>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-check text-start">
+                                <input class="form-check-input" type="checkbox" id="villa">
+                                <label class="form-check-label" for="villa">Villa</label>
+                            </div>
+                            <div class="form-check text-start">
+                                <input class="form-check-input" type="checkbox" id="studio">
+                                <label class="form-check-label" for="studio">Studio</label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-check text-start">
+                                <input class="form-check-input" type="checkbox" id="flat">
+                                <label class="form-check-label" for="flat">Flat</label>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- Beds Filter -->
+                <details class="col-12 col-md-4">
+                    <summary class="fs-6 fw-bold pb-1">Beds</summary>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-check text-start">
+                                <input class="form-check-input" type="checkbox" id="1bed">
+                                <label class="form-check-label" for="1bed">1</label>
+                            </div>
+                            <div class="form-check text-start">
+                                <input class="form-check-input" type="checkbox" id="3bed">
+                                <label class="form-check-label" for="3bed">3</label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-check text-start">
+                                <input class="form-check-input" type="checkbox" id="2bed">
+                                <label class="form-check-label" for="2bed">2</label>
+                            </div>
+                            <div class="form-check text-start">
+                                <input class="form-check-input" type="checkbox" id="4bed">
+                                <label class="form-check-label" for="4bed">+4</label>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- Bathrooms Filter -->
+                <details class="col-12 col-md-4">
+                    <summary class="fs-6 fw-bold pb-1">Bathrooms</summary>
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="form-check text-start">
+                                <input class="form-check-input" type="checkbox" id="1bath">
+                                <label class="form-check-label" for="1bath">1</label>
+                            </div>
+                            <div class="form-check text-start">
+                                <input class="form-check-input" type="checkbox" id="3bath">
+                                <label class="form-check-label" for="3bath">3</label>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="form-check text-start">
+                                <input class="form-check-input" type="checkbox" id="2bath">
+                                <label class="form-check-label" for="2bath">2</label>
+                            </div>
+                            <div class="form-check text-start">
+                                <input class="form-check-input" type="checkbox" id="4bath">
+                                <label class="form-check-label" for="4bath">+4</label>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+
+                <!-- Furnished -->
+                <details class="col-12 col-md-4">
+                    <summary class="fs-6 fw-bold pb-3">Furnished</summary>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="furnished" id="yes" checked>
+                        <label class="form-check-label" for="yes">Yes</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="furnished" id="no">
+                        <label class="form-check-label" for="no">No</label>
+                    </div>
+                </details>
+            </div>
+
+            <!-- Buttons -->
+            <div class="row mt-5">
+                <div class="col-12 text-center">
+                    <button class="btn btn-outline-dark me-2" style="width: 10%; min-width: fit-content;">Reset</button>
+                    <button class="btn purple" style="width: 10%;min-width: fit-content;">Apply</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Apartment Listings -->
+
+    <div class="container mt-5">
+
+        <div class="row w-100">
+            <div class="mb-4 flex-wrap d-flex flex-row justify-content-center">
+                @foreach (var apartment in Model)
+                {
+                    <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+                        <div class="container rounded shadow-sm p-3"
+                             style="background-color: #FFFFFF; min-width: 250px; max-width: 350px;">
+                            <!-- Apartment Image -->
+                            <div class="image-container text-center mb-3">
+                                <img src="@Url.Content(apartment.MainImage ?? "~/images/default-listing.png")"
+                                     class="img-fluid rounded"
+                                     alt="@apartment.Name"
+                                     style="height: 200px; object-fit: cover;">
+                            </div>
+                            <!-- Apartment Details -->
+                            <div class="text-center">
+                                <h5 class="card-title fw-bold">@apartment.Name</h5>
+                                <p class="fs-6 text-muted">
+                                    Price: $@apartment.PricePerNight / night
+                                </p>
+                                <p class="text-muted" style="min-height: 50px; overflow: hidden; text-overflow: ellipsis;">
+                                    @apartment.Description
+                                </p>
+                                <a href="@Url.Action("ApartmentDetails", "Pages", new { id = apartment.Id })"
+                                   class="btn outlined-purple w-100">
+                                    View Details
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+
+
+       
+    </div>
+
+
+    <nav aria-label="Page navigation ">
+        <ul class="pagination justify-content-center">
+            <li class="page-item ">
+                <a class="page-link" href="#">Previous</a>
+            </li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item "><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+                <a class="page-link" href="#">Next</a>
+            </li>
+        </ul>
+    </nav>
+
+
+
+   
+
+
+
+  
+</body>
+</html>
+
